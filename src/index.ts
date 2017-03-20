@@ -1,6 +1,7 @@
 import * as _ from 'lodash';
-import { Duration } from 'dslink';
 import 'source-map-support/register';
+
+const ds = require('dslink');
 
 const DIVISOR: number = 2;
 

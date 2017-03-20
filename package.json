@@ -1,43 +1,40 @@
 {
-    "name": "dsa-dslink-javascript-cogs-pubsub",
-    "version": "1.0.0",
-    "description": "A DSLink to connect DSA to Cogswell.io Pub/Sub",
-    "main": "dist/index.js",
-    "scripts": {
-        "test": "mocha-webpack --webpack-config webpack.config.js test/**/*.js",
-        "watch": "webpack --watch",
-        "lint": "eslint src/",
-        "start": "node ./dist/bundle.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/cogswell-io/dsa-dslink-javascript-cogs-pubsub.git"
-    },
-    "author": "Aviata",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/cogswell-io/dsa-dslink-javascript-cogs-pubsub/issues"
-    },
-    "homepage": "https://github.com/cogswell-io/dsa-dslink-javascript-cogs-pubsub#readme",
-    "dependencies": {
-        "dslink": "git+https://github.com/aaleixandreaviata/sdk-dslink-javascript.git",
-        "source-map-support": "^0.4.14"
-    },
-    "devDependencies": {
-        "typescript": "^2.2.1",
-        "ts-loader": "^2.0.2",
-        "@types/lodash": "^4.14.55",
-        "@types/es6-promise": "0.0.32",
-        "@types/node": "^7.0.8",
-        "chai": "^3.5.0",
-        "eslint": "^3.18.0",
-        "eslint-config-airbnb": "^14.1.0",
-        "eslint-plugin-babel": "^4.1.1",
-        "eslint-plugin-import": "^2.2.0",
-        "eslint-plugin-jsx-a11y": "^4.0.0",
-        "eslint-plugin-react": "^6.10.0",
-        "mocha": "^3.2.0",
-        "mocha-webpack": "^0.7.0",
-        "webpack": "^2.2.1"
-    }
+  "name": "dsa-dslink-javascript-cogs-pubsub",
+  "version": "1.0.0",
+  "description": "A DSLink to connect DSA to Cogswell.io Pub/Sub",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "mocha-webpack --webpack-config webpack.config.js test/**/*.ts",
+    "watch": "webpack --watch",
+    "lint": "tslint -c tslint.json 'src/**/*.ts' 'test/**/*.ts'",
+    "start": "node ./dist/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cogswell-io/dsa-dslink-javascript-cogs-pubsub.git"
+  },
+  "author": "Aviata",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cogswell-io/dsa-dslink-javascript-cogs-pubsub/issues"
+  },
+  "homepage": "https://github.com/cogswell-io/dsa-dslink-javascript-cogs-pubsub#readme",
+  "dependencies": {
+    "dslink": "git+https://github.com/aaleixandreaviata/sdk-dslink-javascript.git",
+    "source-map-support": "^0.4.14"
+  },
+  "devDependencies": {
+    "@types/chai": "^3.4.35",
+    "@types/es6-promise": "0.0.32",
+    "@types/lodash": "^4.14.55",
+    "@types/mocha": "^2.2.40",
+    "@types/node": "^7.0.8",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "mocha-webpack": "^0.7.0",
+    "ts-loader": "^2.0.2",
+    "tslint": "^4.5.1",
+    "typescript": "^2.2.1",
+    "webpack": "^2.2.1"
+  }
 }

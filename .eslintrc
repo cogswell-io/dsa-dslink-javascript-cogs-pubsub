@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "env": {
+    "node": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": "node_modules"
+      }
+    }
+  },
+  "rules": {
+    "space-before-function-paren": "off",
+    "no-plusplus": "off",
+    "no-bitwise": "off",
+    "consistent-return": "off",
+    "comma-dangle": ["error", {
+      "arrays": "only-multiline",
+      "objects": "only-multiline",
+      "imports": "only-multiline",
+      "exports": "only-multiline",
+      "functions": "never",
+      "newline-per-chained-call": "off"
+    }]
+  }
+}
